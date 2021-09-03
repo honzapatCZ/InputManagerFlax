@@ -6,7 +6,11 @@ using FlaxEngine;
 
 namespace InputManagerFlax
 {
-    public abstract class InputAction<T>
+    public abstract class InputAction
+    {
+
+    }
+    public abstract class InputAction<T> : InputAction
     {
         public InputActuator<T>[] actuators;
 
